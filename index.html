@@ -1,221 +1,89 @@
 <!doctype html>
-<html lang="he" dir="rtl">
-<head><title>Matthorn ~ Old Money Couture & Fine Jewelry</title>
-  <meta charset="utf-8" />
-  <meta <title>Matthorn ~ Old Money Couture & Fine Jewelry</title>
-  <title><!doctype html>
 <html lang="en" dir="ltr">
 <head>
-    <title>Matthorn – Old Money Couture & Fine Jewelry</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Matthorn – Timeless Old Money couture and fine jewelry, crafted with elegance and sophistication.">
-    <link rel="icon" type="image/png" href="favicon.png" />
-  <meta name="description" content="קוטור ותכשיטים בסגנון Old Money: קלאסיקה על־זמנית, חומרים נאצלים, עבודת יד ללא פשרות." />
-  <link rel="icon" type="image/png" href="/favicon.png" />
-  <style>
-    :root{
-      --ivory:#F6F2E9; --forest:#0F3B2E; --gold:#B08D57; --ink:#0A0A0A; --muted:#7D7A73;
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:var(--ivory);color:var(--ink);font-family:Arial,system-ui,-apple-system,Segoe UI,Roboto,'Noto Sans',sans-serif}
-    a{color:inherit;text-decoration:none}
-    .container{max-width:1200px;margin:0 auto;padding:0 16px}
-    header{position:fixed;inset-inline:0;top:0;height:64px;background:rgba(246,242,233,.75);backdrop-filter:saturate(150%) blur(8px);display:flex;align-items:center;z-index:20;border-bottom:1px solid rgba(0,0,0,.05)}
-    header .brand{font-family:Georgia,'Times New Roman',serif;font-size:18px;letter-spacing:.08em}
-    header nav{margin-inline-start:auto;display:flex;gap:16px;font-size:14px}
-    header .cta{background:var(--forest);color:white;padding:10px 14px;border-radius:999px}
-    main{margin-top:64px}
-    .hero{position:relative;height:92vh;min-height:560px;display:grid;place-items:center;overflow:hidden;background:#000}
-    .hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.85}
-    .hero .poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.85;display:none}
-    .hero::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(0,0,0,.0),rgba(0,0,0,.45) 70%)}
-    .reveal-wrap{position:relative;z-index:2;text-align:center;padding:0 16px}
-    .reveal{
-      font-family:Georgia,'Times New Roman',serif;
-      font-size: clamp(36px,7vw,96px);
-      line-height:1.05; letter-spacing:.12em; text-transform:uppercase;
-      color:transparent;
-      background:linear-gradient(to bottom, #ffffff, #d9d2c4);
-      -webkit-background-clip:text; background-clip:text;
-      --p:0%;
-      -webkit-mask:linear-gradient(90deg,#000 0 var(--p),transparent var(--p) 100%);
-      mask:linear-gradient(90deg,#000 0 var(--p),transparent var(--p) 100%);
-      transition:--p 2.8s ease-out;
-      will-change:transform;
-    }
-    .subtitle{margin-top:12px;color:#ECE7DE;font-size:14px;opacity:.9}
-    .hero .cta-row{margin-top:28px;display:flex;justify-content:center;gap:10px;flex-wrap:wrap}
-    .btn{border:1px solid rgba(255,255,255,.6);color:#fff;padding:12px 18px;border-radius:999px;font-size:14px}
-    .btn.primary{background:var(--gold);border-color:var(--gold);color:#111}
-    .vals{padding:56px 0;background:var(--ivory)}
-    .vals-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
-    .val{background:white;border:1px solid #e8e2d7;border-radius:14px;padding:20px}
-    .val h3{margin:0 0 8px;font-family:Georgia,serif;font-size:18px;color:var(--forest)}
-    .val p{margin:0;color:var(--muted);font-size:14px}
-    @media(min-width:900px){.vals-grid{grid-template-columns:repeat(4,1fr)}}
-    .split{display:grid;grid-template-columns:1fr;gap:18px;margin:24px 0}
-    @media(min-width:900px){.split{grid-template-columns:1fr 1fr}}
-    .panel{position:relative;min-height:320px;border-radius:18px;overflow:hidden;background:#111;color:#fff;display:flex;align-items:flex-end}
-    .panel .inner{position:relative;z-index:2;padding:22px}
-    .panel .title{font-family:Georgia,serif;font-size:34px;letter-spacing:.08em}
-    .panel .link{margin-top:6px;display:inline-block;border-bottom:1px solid rgba(255,255,255,.6)}
-    .panel::before{content:'';position:absolute;inset:0;opacity:.8;background-size:cover;background-position:center}
-    .panel.clothing::before{background-image:url('assets/clothing.jpg')}
-    .panel.jewelry::before{background-image:url('assets/jewelry.jpg')}
-    .panel::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.55),transparent 55%)}
-    .products{padding:30px 0 60px}
-    .products h2,.about h2,.join h2{font-family:Georgia,serif;color:var(--forest);letter-spacing:.06em}
-    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
-    @media(min-width:900px){.grid{grid-template-columns:repeat(3,1fr)}}
-    .card{background:white;border:1px solid #e8e2d7;border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
-    .thumb{aspect-ratio:3/4;background:#ddd}
-    .card .meta{padding:12px}
-    .name{font-size:14px}
-    .price{margin-top:6px;color:var(--forest);font-weight:700}
-    .add{margin:12px;display:block;text-align:center;padding:10px;border-radius:10px;background:var(--forest);color:#fff}
-    .about{padding:50px 0}
-    .about p{color:#3a3a3a;max-width:60ch}
-    .join{padding:40px 0;background:linear-gradient(180deg,rgba(176,141,87,.08),transparent)}
-    form{display:flex;gap:8px;max-width:520px}
-    input[type='email']{flex:1;padding:12px 14px;border-radius:999px;border:1px solid #c8b79b;background:#fff}
-    button[type='submit']{padding:12px 18px;border-radius:999px;border:0;background:var(--gold);cursor:pointer}
-    footer{padding:24px 0;border-top:1px solid #e8e2d7;color:#6b6b6b;font-size:13px}
-  </style>
+    <title>Matthorn ~ Old Money Couture & Fine Jewelry</title>
+    <meta name="description" content="Matthorn – Timeless Old Money couture and fine jewelry." />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <style>
+        :root {
+            --ivory:#F6F2E9;
+            --forest:#0F3B2E;
+            --gold:#B08D57;
+            --ink:#0A0A0A;
+            --muted:#7D7A73;
+        }
+        *{box-sizing:border-box}
+        html,body{margin:0;padding:0;background:var(--ivory);color:var(--ink);font-family:Arial,system-ui,-apple-system,Segoe UI,Roboto,'Noto Sans',sans-serif}
+        a{color:inherit;text-decoration:none}
+        .container{max-width:1200px;margin:0 auto;padding:0 16px}
+        header{position:fixed;inset-inline:0;top:0;height:64px;background:rgba(246,242,233,.75);backdrop-filter:saturate(150%) blur(8px);display:flex;align-items:center;z-index:20;border-bottom:1px solid rgba(0,0,0,.05)}
+        header .brand{font-family:Georgia,'Times New Roman',serif;font-size:18px;letter-spacing:.08em}
+        header nav{margin-inline-start:auto;display:flex;gap:16px;font-size:14px}
+        header .cta{background:var(--forest);color:white;padding:10px 14px;border-radius:999px}
+        main{margin-top:64px}
+        .hero{position:relative;height:92vh;min-height:560px;display:grid;place-items:center;overflow:hidden;background:#000}
+        .hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.85}
+        .hero::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(0,0,0,.0),rgba(0,0,0,.45) 70%)}
+        .reveal-wrap{position:relative;z-index:2;text-align:center;padding:0 16px}
+        .reveal{
+            font-family:Georgia,'Times New Roman',serif;
+            font-size: clamp(36px,7vw,96px);
+            line-height:1.05; letter-spacing:.12em; text-transform:uppercase;
+            color:transparent;
+            background:linear-gradient(to bottom, #ffffff, #d9d2c4);
+            -webkit-background-clip:text; background-clip:text;
+            --p:0%;
+            -webkit-mask:linear-gradient(90deg,#000 0 var(--p),transparent var(--p) 100%);
+            mask:linear-gradient(90deg,#000 0 var(--p),transparent var(--p) 100%);
+            transition:--p 2.8s ease-out;
+            will-change:transform;
+        }
+        .subtitle{margin-top:12px;color:#ECE7DE;font-size:14px;opacity:.9}
+        .hero .cta-row{margin-top:28px;display:flex;justify-content:center;gap:10px;flex-wrap:wrap}
+        .btn{border:1px solid rgba(255,255,255,.6);color:#fff;padding:12px 18px;border-radius:999px;font-size:14px}
+        .btn.primary{background:var(--gold);border-color:var(--gold);color:#111}
+    </style>
 </head>
 <body>
-  <header class="container">
-    <div class="brand">BRAND NAME</div>
-    <nav>
-      <a href="#collections">קולקציות</a>
-      <a href="#about">על המותג</a>
-      <a class="cta" href="#join">הצטרפות למועדון</a>
-    </nav>
-  </header>
+    <header class="container">
+        <div class="brand">Matthorn</div>
+        <nav>
+            <a href="#collections">Collections</a>
+            <a href="#about">About</a>
+            <a class="cta" href="#join">Join the Club</a>
+        </nav>
+    </header>
 
-  <main>
-    <section class="hero" aria-label="Hero">
-      <video id="heroVideo" src="assets/hero.mp4" autoplay muted playsinline loop poster="assets/poster.jpg"></video>
-      <img class="poster" id="heroPoster" src="assets/poster.jpg" alt="Hero poster" />
-      <div class="reveal-wrap">
-        <div id="reveal" class="reveal">BRAND NAME</div>
-        <div class="subtitle">Old Money Couture · Fine Jewelry</div>
-        <div class="cta-row">
-          <a class="btn primary" href="#collections">לרכישה</a>
-          <a class="btn" href="#about">גלה את הפילוסופיה</a>
-        </div>
-      </div>
-    </section>
+    <main>
+        <!-- HERO with video + slow brand reveal -->
+        <section class="hero" aria-label="Hero">
+            <video src="assets/hero.mp4" autoplay muted playsinline loop></video>
+            <div class="reveal-wrap">
+                <div id="reveal" class="reveal">Matthorn</div>
+                <div class="subtitle">Old Money Couture · Fine Jewelry</div>
+                <div class="cta-row">
+                    <a class="btn primary" href="#collections">Shop Now</a>
+                    <a class="btn" href="#about">Discover the Philosophy</a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <section class="vals">
-      <div class="container">
-        <div class="vals-grid">
-          <div class="val"><h3>חומרים נאצלים</h3><p>זהב ואריגים בשיבוץ פרמיום בלבד.</p></div>
-          <div class="val"><h3>תפירה עילית</h3><p>פרופורציות קלאסיות, התאמה מדויקת.</p></div>
-          <div class="val"><h3>עבודת יד</h3><p>גימור ידני, הקפדה על פרטים.</p></div>
-          <div class="val"><h3>אחריות ואמינות</h3><p>תעודות, אחריות ושירות דיסקרטי.</p></div>
-        </div>
-      </div>
-    </section>
+    <footer class="container">
+        © Matthorn · All rights reserved
+    </footer>
 
-    <section id="collections" class="container">
-      <div class="split">
-        <a class="panel clothing" href="#">
-          <div class="inner">
-            <div class="title">Clothing</div>
-            <span class="link">לצפייה בקולקציה</span>
-          </div>
-        </a>
-        <a class="panel jewelry" href="#">
-          <div class="inner">
-            <div class="title">Jewelry</div>
-            <span class="link">לצפייה בקולקציה</span>
-          </div>
-        </a>
-      </div>
-    </section>
-
-    <section class="products container">
-      <h2>נבחרי העונה</h2>
-      <div class="grid">
-        <div class="card">
-          <div class="thumb" style="background-image:url('assets/p1.jpg');background-size:cover;background-position:center"></div>
-          <div class="meta"><div class="name">ז׳קט טוויד מדויק</div><div class="price">₪1,790</div></div>
-          <a href="#" class="add">הוסף לסל</a>
-        </div>
-        <div class="card">
-          <div class="thumb" style="background-image:url('assets/p2.jpg');background-size:cover;background-position:center"></div>
-          <div class="meta"><div class="name">טבעת זהב 14K — Signet</div><div class="price">₪2,450</div></div>
-          <a href="#" class="add">הוסף לסל</a>
-        </div>
-        <div class="card">
-          <div class="thumb" style="background-image:url('assets/p3.jpg');background-size:cover;background-position:center"></div>
-          <div class="meta"><div class="name">עניבת משי — Navy</div><div class="price">₪390</div></div>
-          <a href="#" class="add">הוסף לסל</a>
-        </div>
-        <div class="card">
-          <div class="thumb" style="background-image:url('assets/p4.jpg');background-size:cover;background-position:center"></div>
-          <div class="meta"><div class="name">עגילי Hoop דקים 18K</div><div class="price">₪1,260</div></div>
-          <a href="#" class="add">הוסף לסל</a>
-        </div>
-        <div class="card">
-          <div class="thumb" style="background-image:url('assets/p5.jpg');background-size:cover;background-position:center"></div>
-          <div class="meta"><div class="name">חולצת Oxford — לבן</div><div class="price">₪320</div></div>
-          <a href="#" class="add">הוסף לסל</a>
-        </div>
-        <div class="card">
-          <div class="thumb" style="background-image:url('assets/p6.jpg');background-size:cover;background-position:center"></div>
-          <div class="meta"><div class="name">שרשרת Vene chain — 45 ס״מ</div><div class="price">₪890</div></div>
-          <a href="#" class="add">הוסף לסל</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="about container">
-      <h2>על המותג</h2>
-      <p>
-        BRAND NAME נולד מתוך מחויבות לאסתטיקה קלאסית וחומרים נאצלים.
-        אנו מאמינים ששיק אמיתי הוא שקט: קווים נקיים, פרופורציות מדויקות, ועבודת יד חסרת פשרות.
-        כל פריט נתפר או משובץ מתוך תפיסת על־זמניות — להשאיר חותם, לא רעש.
-      </p>
-    </section>
-
-    <section id="join" class="join">
-      <div class="container">
-        <h2>הצטרפו למועדון — גישה מוקדמת לקולקציות</h2>
-        <form onsubmit="event.preventDefault(); alert('תודה!');">
-          <input type="email" placeholder="האימייל שלך" required />
-          <button type="submit">שלח</button>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">© BRAND NAME · כל הזכויות שמורות · יצירת קשר: support@example.com</div>
-  </footer>
-
-  <script>
-    // Reveal brand name slowly on load
-    window.addEventListener('load', () => {
-      const el = document.getElementById('reveal');
-      requestAnimationFrame(() => {
-        el.style.setProperty('--p', '0%');
-        setTimeout(()=>{ el.style.setProperty('--p','100%'); }, 100);
-      });
-      // Fallback: if video cannot play, show poster image
-      const video = document.getElementById('heroVideo');
-      const poster = document.getElementById('heroPoster');
-      const showPoster = () => { if(poster) poster.style.display = 'block'; };
-      if (video) {
-        video.addEventListener('error', showPoster);
-        setTimeout(() => {
-          if (video.readyState < 2) showPoster();
-        }, 1500);
-      } else {
-        showPoster();
-      }
-    });
-  </script>
+    <script>
+        // Reveal brand name slowly on load
+        window.addEventListener('load', () => {
+            const el = document.getElementById('reveal');
+            requestAnimationFrame(() => {
+                el.style.setProperty('--p', '0%');
+                setTimeout(()=>{ el.style.setProperty('--p','100%'); }, 100);
+            });
+        });
+    </script>
 </body>
 </html>
